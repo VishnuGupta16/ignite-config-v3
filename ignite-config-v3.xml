@@ -42,7 +42,7 @@
                    to be persisted. It's assumed the directory is on a dedicated disk.
                 -->
                 <property name="storagePath" value="/persistence"/>
-                <property name="authenticationEnabled" value="true"/>
+         
 
                 <!--
                     Sets a path to the directory where WAL is stored.
@@ -57,7 +57,7 @@
                 <property name="walArchivePath" value="/wal/archive"/>
             </bean>
         </property>
-
+          <property name="authenticationEnabled" value="true"/>
         <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
         <property name="discoverySpi">
             <bean class="org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi">
